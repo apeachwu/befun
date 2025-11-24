@@ -1298,7 +1298,7 @@ body {
   .nav ul {
     justify-content: center;
     flex-wrap: nowrap;
-    gap: 2rem;
+    gap: 1.5rem;
     overflow: visible;
   }
   .nav li {
