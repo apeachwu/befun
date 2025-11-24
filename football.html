@@ -1,0 +1,660 @@
+<!DOCTYPE html>
+<html class="first zh-cn">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+  <title>BeFun Score</title>
+  <link rel="stylesheet" href="scss/style.css">
+  <script src="js/jquery.js"></script>
+</head>
+
+<body>
+  <div id="mainBody" class="clearfix">
+    <!-- page-header -->
+    <div id="page-header">
+      <div id="header-wrap" class="clearfix">
+        <div class="header-top-row">
+          <!-- logo -->
+          <div class="logo">
+            <a href="index.html"></a>
+          </div>
+          <div class="header-right-group">
+            <!-- search -->
+            <div class="search-box">
+              <span class="search-icon"></span>
+              <input type="text" placeholder="搜索" />
+            </div>
+            <!-- lang -->
+            <div class="lang-wrap">
+              <div class="ele-lang-wrap">
+                <a href="#" class="lang-icon"></a>
+                <div class="ele-lang-group">
+                  <a href="#" class="ele-lang-option lang-zh-cn">
+                    <span class="flag-icon"></span><span class="lang-label">简体中文</span>
+                  </a>
+                  <a href="#" class="ele-lang-option lang-zh-tw">
+                    <span class="flag-icon"></span><span class="lang-label">繁體中文</span>
+                  </a>
+                  <a href="#" class="ele-lang-option lang-en">
+                    <span class="flag-icon"></span><span class="lang-label">English</span>
+                  </a>
+                  <a href="#" class="ele-lang-option lang-th">
+                    <span class="flag-icon"></span><span class="lang-label">แบบไทย</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <!-- settings -->
+            <div class="settings-wrap">
+              <div class="settings-toggle">
+                <a href="#" class="settings-icon"></a>
+                <div class="settings-menu">
+                  <a href="#" class="settings-item" id="light-mode">日間版</a>
+                  <a href="#" class="settings-item" id="dark-mode">夜間版</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- nav -->
+          <div class="nav">
+            <ul class="clearfix">
+              <li><a href="football.html"><span class="nav-icon icon-1"></span><span>足球</span></a></li>
+              <li><a href="#"><span class="nav-icon icon-2"></span><span>篮球</span></a></li>
+              <li><a href="#"><span class="nav-icon icon-3"></span><span>英超联赛</span></a></li>
+              <li><a href="#"><span class="nav-icon icon-3"></span><span>西甲联赛</span></a></li>
+              <li><a href="#"><span class="nav-icon icon-3"></span><span>德甲联赛</span></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- page-container-inner -->
+    <div id="page-container-inner" class="clearfix">
+      <!-- title-events-wrap 比賽隊伍-->
+      <div id="title-events-wrap" class="clearfix">
+        <div id="title-events" class="clearfix">
+          <div class="match-block">
+            <!-- 上方主標題與星星 -->
+            <div class="match-header">
+              <div class="star-icon"></div>
+              <div class="match-title">亞洲預選</div>
+            </div>
+            <!-- 日期 -->
+            <div class="match-date">Fri Jun 06 2025 00:00:00</div>
+            <!-- 賽事內容 -->
+            <div class="match-content">
+              <!-- 左側星星 -->
+              <div class="side-star star-icon"></div>
+              <!-- 主隊 -->
+              <!-- 主隊 -->
+              <div class="team">
+                <div class="team-icon team-icon-21"></div>
+                <div class="team-name">奥地利克拉奥地</div>
+              </div>
+              <!-- 比數 -->
+              <div class="score">3-1</div>
+              <!-- 客隊 -->
+              <div class="team">
+                <div class="team-icon team-icon-22"></div>
+                <div class="team-name">阿尔塔奇</div>
+              </div>
+              <!-- 右側星星 -->
+              <div class="side-star star-icon"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="title-events-mobile-wrap">
+        <!-- 初始畫面 -->
+        <div class="title-events-mobile-content">
+          <div class="title-events-mobile-header">
+            <div class="title-events-mobile-icon star"></div>
+            <div class="title-events-mobile-title">亞洲預選</div>
+            <div class="title-events-mobile-date"></div>
+          </div>
+
+          <div class="title-events-mobile-teams">
+            <div class="title-events-mobile-icon star"></div>
+            <div class="title-events-mobile-team">
+              <div class="team-logo team1"></div>
+              <div class="team-name">特赖斯基兴</div>
+            </div>
+            <div class="title-events-mobile-score">3-1</div>
+            <div class="title-events-mobile-team">
+              <div class="team-logo team2"></div>
+              <div class="team-name">莫爾</div>
+            </div>
+            <div class="title-events-mobile-icon star"></div>
+          </div>
+
+          <div class="title-events-mobile-toggle">
+            <div class="toggle-btn">
+              <div class="icon-mobile-left"></div>
+              <div class="icon-mobile-right"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Live 畫面 -->
+        <div class="title-events-mobile-live hidden">
+          <div class="back-btn">
+            <svg viewBox="0 0 24 24">
+              <path d="M15 18 L9 12 L15 6" stroke="white" stroke-width="2" fill="none" stroke-linecap="round"
+                stroke-linejoin="round" />
+            </svg>
+          </div>
+        </div>
+
+        <!-- Anime 畫面 -->
+        <div class="title-events-mobile-anime hidden">
+          <div class="back-btn">
+            <svg viewBox="0 0 24 24">
+              <path d="M15 18 L9 12 L15 6" stroke="white" stroke-width="2" fill="none" stroke-linecap="round"
+                stroke-linejoin="round" />
+            </svg>
+          </div>
+        </div>
+      </div>
+      <!-- tabs-wrap 切換分頁-->
+      <div class="tabs-wrap">
+        <div class="tabs-nav">
+          <button class="tabs-btn current" data-tab="overview">总览</button>
+          <button class="tabs-btn" data-tab="odds">赔率</button>
+          <button class="tabs-btn mobile-only" data-tab="chat">聊天</button>
+          <button class="tabs-btn mobile-only" data-tab="lineup">陣容</button>
+        </div>
+      </div>
+      <!-- tabs-content-wrap -->
+      <div class="tabs-content-wrap">
+        <div class="tabs-content current" id="overview">
+          <!-- 上 -->
+          <div class="content-top">
+            <!-- table-wrapper 賠率數據-電腦版+平板 -->
+            <div class="table-wrapper">
+              <div class="responsive-wrapper">
+                <div class="odds-data-table">
+                  <!-- 標題列 -->
+                  <div class="odds-data-row odds-data-header">
+                    <div class="odds-data-col odds-data-col1">
+                      <div class="odds-data-type-selector">
+                        <div class="logo"></div>
+                        <svg class="dropdown-icon" width="12" height="7" viewBox="0 0 12 7" fill="none"
+                          xmlns="http://www.w3.org/2000/svg">
+                          <path d="M1 1L6 6L11 1" stroke="white" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                        </svg>
+                      </div>
+                      <div class="odds-data-dropdown">
+                        <button data-index="0" class="dropdown-item"></button>
+                        <button data-index="1" class="dropdown-item"></button>
+                        <button data-index="2" class="dropdown-item"></button>
+                        <button data-index="3" class="dropdown-item"></button>
+                      </div>
+                    </div>
+                    <div class="odds-data-col odds-data-col2">
+                      <span>1</span><span>X</span><span>2</span>
+                    </div>
+                    <div class="odds-data-col odds-data-col3">
+                      <span>亚盘</span>
+                    </div>
+                    <div class="odds-data-col odds-data-col4">
+                      <span>进球数</span><span>大球</span><span>小球</span>
+                    </div>
+                    <div class="odds-data-col odds-data-col5">
+                      <span>角球</span><span>高于</span><span>低于</span>
+                    </div>
+                  </div>
+                  <div class="odds-data-row odds-data-body bg-blue">
+                    <div class="odds-data-col odds-data-col1"><span>初始赔率</span></div>
+                    <div class="odds-data-col odds-data-col2">
+                      <span>3.50</span><span>3.25</span><span>2.80</span>
+                    </div>
+                    <div class="odds-data-col odds-data-col3">
+                      <span><em>+1</em>.95</span><span><em>-1</em>.85</span>
+                    </div>
+                    <div class="odds-data-col odds-data-col4">
+                      <span class="highlight">2.5</span><span>1.92</span><span>1.98</span>
+                    </div>
+                    <div class="odds-data-col odds-data-col5">
+                      <span>3.20</span><span>1.88</span><span>2.00</span>
+                    </div>
+                  </div>
+                  <div class="odds-data-row odds-data-body bg-yellow last-row">
+                    <div class="odds-data-col odds-data-col1"><span>赛前赔率</span></div>
+                    <div class="odds-data-col odds-data-col2">
+                      <span>4.00</span><span>3.10</span><span>2.50</span>
+                    </div>
+                    <div class="odds-data-col odds-data-col3">
+                      <span><em>+2</em>.90</span><span><em>-2</em>.95</span>
+                    </div>
+                    <div class="odds-data-col odds-data-col4">
+                      <span class="highlight">3.0</span><span>1.85</span><span>2.05</span>
+                    </div>
+                    <div class="odds-data-col odds-data-col5">
+                      <span>3.40</span><span>1.80</span><span>2.10</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- table-wrapper 賠率數據-手機板 -->
+            <div class="odds-info-wrapper">
+              <!-- 標題欄 -->
+              <div class="odds-overview-header">
+                <span class="header-title">赔率</span>
+                <a href="#" class="header-more" data-tab="odds">
+                  more
+                  <svg class="header-more-icon" viewBox="0 0 24 24" width="20" height="20">
+                    <path d="M9 6l6 6-6 6" stroke="#FFF" stroke-width="2" fill="none" stroke-linecap="round"></path>
+                  </svg>
+                </a>
+              </div>
+              <!-- Table -->
+              <div class="odds-info-table-wrap">
+                <table class="odds-info-table">
+                  <thead>
+                    <tr>
+                      <th></th>
+                      <th colspan="3">1x2</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <!-- 初始賠率 -->
+                    <tr class="brand-row">
+                      <td rowspan="3">bet365</td>
+                      <td class="odds-cell">8.50</td>
+                      <td class="odds-cell">6.50</td>
+                      <td class="odds-cell">1.20</td>
+                    </tr>
+                    <!-- 赛前賠率 -->
+                    <tr class="pre-row hidden">
+                      <td class="odds-cell">8.10</td>
+                      <td class="odds-cell">6.30</td>
+                      <td class="odds-cell">1.25</td>
+                    </tr>
+                    <!-- 赛中賠率 -->
+                    <tr class="live-row hidden">
+                      <td class="odds-cell">7.90</td>
+                      <td class="odds-cell">6.10</td>
+                      <td class="odds-cell">1.30</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+
+              <!-- 註解列 -->
+              <div class="odds-info-annotation-row">
+                <div class="annotation-item icon-blue">
+                  <div class="annotation-icon"></div>
+                  <span>初始赔率</span>
+                </div>
+                <div class="annotation-item icon-yellow">
+                  <div class="annotation-icon"></div>
+                  <span>赛前赔率</span>
+                </div>
+                <div class="annotation-item icon-green">
+                  <div class="annotation-icon"></div>
+                  <span>赛中赔率</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- 中 -->
+          <div class="content-middle">
+            <div class="container-inner-left">
+              <!-- videos-wrap 直播影片 -->
+              <div class="videos-wrap">
+                <div class="videos-header">
+                  <div class="videos-title">
+                    <span class="videos-title-text">亞洲預選</span>
+                    <span class="videos-title-divider">|</span>
+                    <span class="videos-title-date" id="videos-date"></span>
+                  </div>
+                  <div class="videos-tabs-wrap">
+                    <div class="videos-tabs">
+                      <button class="videos-tab-btn" data-type="live">
+                        <div class="videos-tab-icon live"></div>
+                      </button>
+                      <button class="videos-tab-btn active" data-type="anime">
+                        <div class="videos-tab-icon anime"></div>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="videos-content">
+                  <div class="videos-screen live"></div>
+                  <div class="videos-screen anime active"></div>
+                </div>
+              </div>
+              <!-- live-text-wrap 文字直播 -->
+              <div class="live-text-wrap">
+                <!-- 標題 -->
+                <div class="live-text-header">文字直播</div>
+
+                <!-- 隊伍列 -->
+                <div class="live-text-team-row">
+                  <div class="live-text-team-left">
+                    <div class="live-text-team-icon team-icon1"></div>
+                    <div class="live-text-team-name">奥地利克拉奥地</div>
+                  </div>
+                  <div class="live-text-team-right">
+                    <div class="live-text-team-name">阿尔塔奇</div>
+                    <div class="live-text-team-icon team-icon2"></div>
+                  </div>
+                </div>
+
+                <!-- 中間內容 -->
+                <div class="live-text-content">
+                  <div class="live-text-row">
+                    <div class="live-text-score">F1 3-1</div>
+                  </div>
+                  <div class="live-text-message-list" id="liveTextMessages"></div>
+                </div>
+              </div>
+            </div>
+            <div class="container-inner-right">
+              <!-- chat-room-wrap 聊天室 -->
+              <div class="chat-room-wrap">
+                <div class="chat-room-header">
+                  <div class="chat-room-title">聊天室</div>
+                  <button class="chat-room-toggle-btn" id="chatToggleBtn" aria-label="Toggle Chat">
+                    <svg class="chat-room-toggle-icon" viewBox="0 0 24 24" width="20" height="20">
+                      <path d="M6 9l6 6 6-6" stroke="#FFF" stroke-width="2" fill="none" stroke-linecap="round" />
+                    </svg>
+                  </button>
+                </div>
+
+                <div class="chat-room-body" id="chatRoomBody">
+                  <!-- JS 生成聊天訊息 -->
+                </div>
+
+                <div class="chat-room-footer">
+                  <input type="text" class="chat-room-input" placeholder="写点什么.." />
+                  <button class="chat-room-send-btn" aria-label="Send Message"></button>
+                </div>
+              </div>
+              <!-- data-analysis-wrap 數據分析 -->
+              <div class="data-analysis-wrap">
+                <!-- 標題 -->
+                <div class="data-analysis-header">数据分析</div>
+
+                <!-- 隊伍列 -->
+                <div class="data-analysis-team-row">
+                  <div class="data-analysis-team-left">
+                    <div class="data-analysis-team-icon"></div>
+                    <div class="data-analysis-team-name">奥地利克拉奥地</div>
+                  </div>
+                  <div class="data-analysis-team-right">
+                    <div class="data-analysis-team-name">阿尔塔奇</div>
+                    <div class="data-analysis-team-icon"></div>
+                  </div>
+                </div>
+
+                <!-- 數據分析內容 -->
+                <div class="data-analysis-content-row">
+                  <div class="data-analysis-num data-analysis-num-left">0</div>
+                  <div class="data-analysis-label">角球</div>
+                  <div class="data-analysis-num data-analysis-num-right">0</div>
+                </div>
+
+                <div class="data-analysis-content-row">
+                  <div class="data-analysis-num data-analysis-num-left">0</div>
+                  <div class="data-analysis-label">半场角球</div>
+                  <div class="data-analysis-num data-analysis-num-right">0</div>
+                </div>
+
+                <div class="data-analysis-content-row">
+                  <div class="data-analysis-num data-analysis-num-left">0</div>
+                  <div class="data-analysis-label">黃牌</div>
+                  <div class="data-analysis-num data-analysis-num-right">0</div>
+                </div>
+
+                <div class="data-analysis-content-row">
+                  <div class="data-analysis-num data-analysis-num-left">0</div>
+                  <div class="data-analysis-label">射门</div>
+                  <div class="data-analysis-num data-analysis-num-right">0</div>
+                </div>
+
+                <div class="data-analysis-content-row">
+                  <div class="data-analysis-num data-analysis-num-left">0</div>
+                  <div class="data-analysis-label">射正</div>
+                  <div class="data-analysis-num data-analysis-num-right">0</div>
+                </div>
+
+                <div class="data-analysis-content-row">
+                  <div class="data-analysis-num data-analysis-num-left">0</div>
+                  <div class="data-analysis-label">射正不中</div>
+                  <div class="data-analysis-num data-analysis-num-right">0</div>
+                </div>
+
+                <div class="data-analysis-content-row">
+                  <div class="data-analysis-num data-analysis-num-left">0</div>
+                  <div class="data-analysis-label">控球率</div>
+                  <div class="data-analysis-num data-analysis-num-right">0</div>
+                </div>
+
+                <div class="data-analysis-content-row">
+                  <div class="data-analysis-num data-analysis-num-left">0</div>
+                  <div class="data-analysis-label">进攻</div>
+                  <div class="data-analysis-num data-analysis-num-right">0</div>
+                </div>
+
+                <div class="data-analysis-content-row">
+                  <div class="data-analysis-num data-analysis-num-left">0</div>
+                  <div class="data-analysis-label">危险进攻</div>
+                  <div class="data-analysis-num data-analysis-num-right">0</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- 下 -->
+          <div class="content-bottom">
+            <!-- jersey-wrap 陣容 -->
+            <div class="jersey-wrap">
+              <div class="jersey-header">阵容</div>
+              <div class="jersey-team-row">
+                <div class="jersey-team-col jersey-team-left">
+                  <div class="jersey-team-icon icon-left"></div>
+                  <div class="jersey-team-name">奥地利克拉奥地</div>
+                </div>
+                <div class="jersey-team-col jersey-team-right">
+                  <div class="jersey-team-icon icon-right"></div>
+                  <div class="jersey-team-name">阿尔塔奇</div>
+                </div>
+              </div>
+
+              <!-- JS 會自動生成內容於此 -->
+            </div>
+          </div>
+        </div>
+        <div class="tabs-content" id="odds">
+          <!-- table-wrapper 賠率數據-電腦版+平板 -->
+          <div class="table-wrapper">
+            <div class="responsive-wrapper">
+              <div class="odds-data-table">
+                <!-- 標題列 -->
+                <div class="odds-data-row odds-data-header">
+                  <div class="odds-data-col odds-data-col1">
+                    <div class="odds-data-type-selector">
+                      <div class="logo"></div>
+                      <svg class="dropdown-icon" width="12" height="7" viewBox="0 0 12 7" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1 1L6 6L11 1" stroke="white" stroke-width="2" stroke-linecap="round"
+                          stroke-linejoin="round" />
+                      </svg>
+                    </div>
+                    <div class="odds-data-dropdown">
+                      <button data-index="0" class="dropdown-item"></button>
+                      <button data-index="1" class="dropdown-item"></button>
+                      <button data-index="2" class="dropdown-item"></button>
+                      <button data-index="3" class="dropdown-item"></button>
+                    </div>
+                  </div>
+                  <div class="odds-data-col odds-data-col2">
+                    <span>1</span><span>X</span><span>2</span>
+                  </div>
+                  <div class="odds-data-col odds-data-col3">
+                    <span>亚盘</span>
+                  </div>
+                  <div class="odds-data-col odds-data-col4">
+                    <span>进球数</span><span>大球</span><span>小球</span>
+                  </div>
+                  <div class="odds-data-col odds-data-col5">
+                    <span>角球</span><span>高于</span><span>低于</span>
+                  </div>
+                </div>
+                <div class="odds-data-row odds-data-body bg-blue">
+                  <div class="odds-data-col odds-data-col1"><span>初始赔率</span></div>
+                  <div class="odds-data-col odds-data-col2">
+                    <span>3.50</span><span>3.25</span><span>2.80</span>
+                  </div>
+                  <div class="odds-data-col odds-data-col3">
+                    <span><em>+1</em>.95</span><span><em>-1</em>.85</span>
+                  </div>
+                  <div class="odds-data-col odds-data-col4">
+                    <span class="highlight">2.5</span><span>1.92</span><span>1.98</span>
+                  </div>
+                  <div class="odds-data-col odds-data-col5">
+                    <span>3.20</span><span>1.88</span><span>2.00</span>
+                  </div>
+                </div>
+                <div class="odds-data-row odds-data-body bg-yellow last-row">
+                  <div class="odds-data-col odds-data-col1"><span>赛前赔率</span></div>
+                  <div class="odds-data-col odds-data-col2">
+                    <span>4.00</span><span>3.10</span><span>2.50</span>
+                  </div>
+                  <div class="odds-data-col odds-data-col3">
+                    <span><em>+2</em>.90</span><span><em>-2</em>.95</span>
+                  </div>
+                  <div class="odds-data-col odds-data-col4">
+                    <span class="highlight">3.0</span><span>1.85</span><span>2.05</span>
+                  </div>
+                  <div class="odds-data-col odds-data-col5">
+                    <span>3.40</span><span>1.80</span><span>2.10</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- table-wrapper 賠率數據-手機板 -->
+          <div class="odds-info-wrapper">
+            <!-- 第一列 Tabs -->
+            <div class="odds-info-tabs">
+              <button class="tab-btn active" data-tab="tab-1">1x2</button>
+              <button class="tab-btn" data-tab="tab-2">亚盘</button>
+              <button class="tab-btn" data-tab="tab-3">大小球</button>
+              <button class="tab-btn" data-tab="tab-4">角球</button>
+            </div>
+
+            <!-- 第二列 Switch -->
+            <div class="odds-info-switch">
+              <div class="switch-btn" data-switch="pre">赛前赔率</div>
+              <div class="switch-btn" data-switch="live">赛中赔率</div>
+            </div>
+
+            <!-- Table -->
+            <div class="odds-info-table-wrap">
+              <table class="odds-info-table">
+                <thead>
+                  <tr>
+                    <th></th>
+                    <th colspan="3">1x2</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <!-- 初始賠率 -->
+                  <tr class="brand-row">
+                    <td rowspan="3">bet365</td>
+                    <td class="odds-cell">8.50</td>
+                    <td class="odds-cell">6.50</td>
+                    <td class="odds-cell">1.20</td>
+                  </tr>
+                  <!-- 赛前賠率 -->
+                  <tr class="pre-row hidden">
+                    <td class="odds-cell">8.10</td>
+                    <td class="odds-cell">6.30</td>
+                    <td class="odds-cell">1.25</td>
+                  </tr>
+                  <!-- 赛中賠率 -->
+                  <tr class="live-row hidden">
+                    <td class="odds-cell">7.90</td>
+                    <td class="odds-cell">6.10</td>
+                    <td class="odds-cell">1.30</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <!-- 註解列 -->
+            <div class="odds-info-annotation-row">
+              <div class="annotation-item icon-blue">
+                <div class="annotation-icon"></div>
+                <span>初始赔率</span>
+              </div>
+              <div class="annotation-item icon-yellow">
+                <div class="annotation-icon"></div>
+                <span>赛前赔率</span>
+              </div>
+              <div class="annotation-item icon-green">
+                <div class="annotation-icon"></div>
+                <span>赛中赔率</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tabs-content" id="chat">
+          <!-- chat-room-wrap 聊天室 -->
+          <div class="chat-room-wrap">
+            <div class="chat-room-header">
+              <div class="chat-room-title">聊天室</div>
+              <button class="chat-room-toggle-btn" id="chatToggleBtn" aria-label="Toggle Chat">
+                <svg class="chat-room-toggle-icon" viewBox="0 0 24 24" width="20" height="20">
+                  <path d="M6 9l6 6 6-6" stroke="#FFF" stroke-width="2" fill="none" stroke-linecap="round" />
+                </svg>
+              </button>
+            </div>
+
+            <div class="chat-room-body" id="chatRoomBody">
+              <!-- JS 生成聊天訊息 -->
+            </div>
+
+            <div class="chat-room-footer">
+              <input type="text" class="chat-room-input" placeholder="写点什么.." />
+              <button class="chat-room-send-btn" aria-label="Send Message"></button>
+            </div>
+          </div>
+        </div>
+        <div class="tabs-content" id="lineup">
+          <!-- jersey-wrap 陣容 -->
+          <div class="jersey-wrap">
+            <div class="jersey-header">阵容</div>
+            <div class="jersey-team-row">
+              <div class="jersey-team-col jersey-team-left">
+                <div class="jersey-team-icon icon-left"></div>
+                <div class="jersey-team-name">奥地利克拉奥地</div>
+              </div>
+              <div class="jersey-team-col jersey-team-right">
+                <div class="jersey-team-icon icon-right"></div>
+                <div class="jersey-team-name">阿尔塔奇</div>
+              </div>
+            </div>
+
+            <!-- JS 會自動生成內容於此 -->
+          </div>
+        </div>
+      </div>
+    </div><!-- page-container-inner -->
+    <!-- page-footer -->
+    <div id="page-footer" class="clearfix">
+      Copyright © 2025 BeFun Score. All rights reserved.
+    </div><!-- page-footer -->
+  </div><!-- mainBody -->
+  <script src="js/ele-dropmenu.js"></script>
+  <script src="js/index.js"></script>
+  <script src="js/pages.js"></script>
+  <script src="js/TweenMax.min.js"></script>
+</body>
+
+</html>
